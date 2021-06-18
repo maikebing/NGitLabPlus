@@ -78,6 +78,7 @@ namespace NGitLab.Models {
         [DataMember(Name = "visibility"), JsonConverter(typeof(StringEnumConverter), true)]
         public VisibilityLevel VisibilityLevel { get; set; }
 
-
+        [DataMember(Name = "archived")]
+        public bool Archived { get; set; }
     }
 }
